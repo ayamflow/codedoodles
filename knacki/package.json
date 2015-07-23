@@ -1,0 +1,20 @@
+{
+  "name": "knacki",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "serve": "./node_modules/.bin/budo src/index.js --live --open --serve build.js",
+    "start": "npm run serve",
+    "build": "./node_modules/.bin/browserify src/index.js > build.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "budo": "^4.1.0",
+    "browserify": "^9.0.8"
+  },
+  "dependencies": {
+    "component-raf": "^1.2.0"
+  }
+}
